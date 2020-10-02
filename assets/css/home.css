@@ -64,7 +64,7 @@ html {
     font-family: Pacifico, cursive;
 }
 
-h1, h2, h3, h4 {
+h1, h2, h3 {
     font-family: Poppins, Helvetica, sans-serif;
 }
 
@@ -259,10 +259,6 @@ header {
 
 .cardDescription {
     padding: 15px;
-}
-
-.cardDescription p:last-child {
-    color: blue;
 }
 
 /* CATEGORIES END */
@@ -642,8 +638,8 @@ footer {
         width: 90%;
         font-size: 1.1rem;
     }
-    .catCardBox {
-        scroll-snap-align: start;
+    .catCardBox, footer, .aboutBox, .commentIntro, .newsletterBox, #categoryBox, header, nav {
+        scroll-snap-align: none;
     }
     .authorPortrait {
         height: auto;
