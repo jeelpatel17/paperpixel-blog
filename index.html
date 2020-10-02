@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>PaperPixel - Crafting Fruitful Blogs.</title>
+    <!--META TAGS-->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="keyword" content="Describe your website here!">
+    <meta name="description" content="Describe your website here!">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--ICON PACK-->
+
+    <!--CUSTOM CSS-->
+    <link rel="stylesheet" href="assets/css/home.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!--FONT-->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700;800&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <!-- HEADER CURVE SVG -->
+    <div class="custom-shape-divider-top-1600944400">
+        <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+            <path
+                d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
+                class="shape-fill"></path>
+        </svg>
+    </div>
+    <div id="hamburger" class="hamburger-icon-container">
+        <span class="hamburger-icon"></span>
+    </div>
+    <header id="landing">
+        <nav role="navigation">
+            <img class="brand" src="assets/img/logo-black.png" alt="PaperPixel-logo" height="auto" width="60px">
+            <ul class="navUl poppins">
+                <a href="#landing" class="navLinks">
+                    <li>Home</li>
+                </a>
+                <a href="#cats" class="navLinks">
+                    <li>Categories</li>
+                </a>
+                <a href="#about" class="navLinks">
+                    <li>About</li>
+                </a>
+            </ul>
+            <div class="openNav" style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</div>
+        </nav>
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="#landing" class="navLinks">
+                <li>Home</li>
+            </a>
+            <a href="#cats" class="navLinks">
+                <li>Categories</li>
+            </a>
+            <a href="#about" class="navLinks">
+                <li>About</li>
+            </a>
+        </div>
+        <div class="divi welcome">
+            <div class="welcomeText">
+                <h1 class="welcomeHeading" data-aos="fade-up">
+                    Reading Never<br>Been So Easier<span class="exAccent">!</span></h1>
+                <h3 class="welcomeSubHeading pacifico" data-aos="fade-up">Crafting beautiful blogs, just for you.</h3>
+            </div>
+            <img class="reading-svg" src="assets/img/illustrations/reading-time-black.svg" alt="readingIllustration">
+        </div>
+    </header>
+    <main>
+        <div id="cats" class="categoryFun grey">
+            <p class="catFunText pacifico">To choose from</p>
+            <img class="catIllus" src="assets/img/illustrations/arrow-black.svg" alt="arrowIllustration">
+        </div>
+        <div id="categoryBox">
+            <h1 class="catHeading center">Blog Categories</h1>
+            <div class="catCardBox poppins">
+                <div class="card" data-aos="fade-right">
+                    <img src="assets/img/illustrations/motivation-illu-black.svg" alt="">
+                    <h2 class="cardHeading center">Motivation</h2>
+                    <div class="cardDescription">
+                        <p>We'll walk this road together, through the storm.
+                        </p>
+                        <br>
+                        <p>Just letting you
+                            know that, you're not alone.</p>
+                        <a href="This-is-why-you-shouldnt-care-about-your-relatives.html"><button class="poppins">Start
+                                reading</button></a>
+                    </div>
+                </div>
+                <div class="card" data-aos="fade-up">
+                    <img src="assets/img/illustrations/self-help-illu-black.svg" alt="">
+                    <h2 class="cardHeading center">Self Help</h2>
+                    <div class="cardDescription">
+                        <p>Boing Boing: A directory of wonderful things!
+                        </p>
+                        <br>
+                        <p>Help yourself first,
+                            your
+                            first priority should be you.
+                        </p>
+                        <a href="3-big-lessons-i-learned-from-my-primary-school-principal.html">
+                            <button class="poppins">Start reading</button></a>
+                    </div>
+                </div>
+                <div class="card" data-aos="fade-left">
+                    <img src="assets/img/illustrations/career-illu-black.svg" alt="">
+                    <h2 class="cardHeading center">Career</h2>
+                    <div class="cardDescription">
+                        <p>The most effective tips for your next meet/interview.</p>
+                        <br>
+                        <p>Finely
+                            baking your career with a cherry on top.
+                        </p>
+                        <a href="best-way-to-increase-vocabulary.html"><button class="poppins">Start
+                                reading</button></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="divi commentIntro">
+            <div class="comIntroText center">
+                <h2 class="comHeading" data-aos="fade-up"><span class="introducing">Introducing,</span><br>Comments<span
+                        class="exAccent">!</span></h2>
+                <p class="comSubHeading poppins" data-aos="fade-up">Whether it's just a compliment to give, or a
+                    suggestion to
+                    implement,
+                    We've got
+                    you all covered.</p>
+            </div>
+        </div>
+        <div class="divi newsletterBox">
+            <div class="newsDescription center" data-aos="fade-right">
+                <h1 class="newsletterHeading">Join the<br>Newsletter<span class="exAccent">!</span></h1>
+                <p class="newsSubHeading poppins">Only pure quality content<br>P.S - I hate spam!</p>
+            </div>
+            <div class="vl"></div>
+            <form method="POST" action="" data-aos="fade-left" class="newsForm poppins">
+                <label for="name">First Name</label>
+                <input type="text" name="name" required autocomplete="off">
+                <label for="email">Email</label>
+                <input type="email" name="email" required autocomplete="off">
+                <button class="submit pacifico" type="submit">Join now<span class="exAccent">!</span></button>
+            </form>
+        </div>
+        <div id="about" class="divi aboutBox">
+            <h3 class="misfit center boldest" data-aos="fade-left">THE <span class="exAccent">CRAZY</span>
+                MISFIT</h3>
+            <h1 class="aboutIntro center">About</h1>
+            <div class="aboutDescFit">
+                <div class="aboutDescription">
+                    <h2 class="aboutHeading" data-aos="fade-up">Jeel Patel triumphing all the way from India.</h2>
+                    <p class="aboutSubDesc poppins" data-aos="fade-up">No one's Perfect, and no one ever will be, then
+                        Why Fighting for
+                        Perfection<span class="exAccent">!</span> Let's Learn, Grow and Develop Together.<br><br>
+                        Heyya<span class="exAccent">!</span> I'm Jeel from India&#128075;. I love to play Garba🧡,
+                        Code
+                        Early in the Morning🔆, also designing prototypes is definitely my can of soda.<br>
+                    </p>
+                    <a href="#"><button class="abtBtn pacifico">Know more about me</button></a>
+                </div>
+                <img class="authorPortrait" src="assets/img/jeelPatel.JPG">
+            </div>
+        </div>
+        <div class="aboutFun grey">
+            <p class="aboutFunText pacifico">The Author</p>
+            <img class="abtArrow" src="assets/img/illustrations/arrow-black.svg" alt="arrowIllustration">
+        </div>
+    </main>
+    <hr>
+    <footer>
+        <div class="socialLinks">
+            <a href="https://github.com/jeelpatel17" target="_blank"><img class="socLink github"
+                    src="assets/img/icons/gh-icon-black.svg" alt="github-icon" data-aos="zoom-in"></a>
+            <a href="https://instagram.com/thisisjeelpatel" target="_blank"><img class="socLink instagram"
+                    src="assets/img/icons/insta-icon-black.svg" alt="instagram-icon" data-aos="zoom-in"></a>
+            <a href="#landing"><img class="socLink brand" src="assets/img/logo-black.png" alt="PaperPixel-logo"
+                    height="auto" width="60px"></a>
+            <a href="https://twitter.com/70r65eL" target="_blank"><img class="socLink twitter"
+                    src="assets/img/icons/twitter-icon-black.svg" alt="twitter-icon" data-aos="zoom-in"></a>
+            <a href="https://snapchat.com/add/jeelcodes" target="_blank"><img class="socLink snapchat"
+                    src="assets/img/icons/sc-icon-black.svg" alt="snapchat-icon" data-aos="zoom-in"></a>
+        </div>
+        <div class="credits">
+            <h3 class="homeCopyRight" data-aos="flip-right"><span class="exAccent">&copy; 2020</span> PAPER PIXEL,
+                INC.
+            </h3>
+            <h3 class="developer" data-aos="flip-left">MADE AT 5AM BY <a href="#">JEEL PATEL</a></h3>
+        </div>
+    </footer>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>

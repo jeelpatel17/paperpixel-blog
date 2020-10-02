@@ -1,0 +1,200 @@
+/* BY DEFAULTS */
+
+:root {
+    --matte: #222f3e;
+}
+
+::selection {
+    color: white;
+    background: #000;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    border: none;
+    outline: none!important;
+    box-sizing: border-box;
+    transition: all .25s ease;
+    list-style: none;
+}
+
+@font-face {
+    font-family: Garamond;
+    src: url(../fonts/Garamond/Cormorant.ttf);
+}
+
+/* STYLES WHEN SOME TEXT IS SELECTED */
+
+::selection {
+    color: #fff;
+    background: blue;
+}
+
+/* CUSTOM SCROLLBAR */
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: black;
+}
+
+::-webkit-scrollbar-thumb {
+    background: grey;
+}
+
+h1, h2, h3, h4 {
+    font-family: Poppins, sans-serif;
+}
+
+.center {
+    text-align: center;
+    margin: auto;
+}
+
+.bold {
+    font-weight: 700;
+}
+
+.bolder {
+    font-weight: 800;
+}
+
+a {
+    text-decoration: none!important;
+    color: blue!important;
+}
+
+.quote {
+    font-size: 2rem;
+}
+
+/* NAVBAR */
+
+.brand {
+    font-family: Garamond;
+    font-size: 2.3rem!important;
+    letter-spacing: 1.5px;
+    color: white!important;
+}
+
+.brand:hover {
+    color: white;
+}
+
+.nav-item {
+    font-family: Poppins, sans-serif;
+    margin: 0 30px;
+    font-size: 1.1rem;
+}
+
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: #f2fade;
+}
+
+.hero h1 {
+    font-size: 4rem;
+}
+
+.hero h3 {
+    font-size: 1.5rem;
+}
+
+article {
+    font-size: 1.5rem;
+    padding: 50px 0;
+    font-family: Garamond, sans-serif;
+    width: 60vw!important;
+    text-align: justify;
+}
+
+article::first-letter {
+    font-size: 200%;
+}
+
+.author-card {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border: 3px lightgray solid;
+    background: darkgrey;
+    border-radius: 10px;
+    color: #f2fade;
+    padding: 20px 0;
+    margin: 20px auto;
+    width: 45vw;
+}
+
+.author-card img {
+    margin: 0 30px;
+    filter: brightness(140%);
+}
+
+.author-card h2 {
+    text-transform: uppercase;
+    font-size: 3.5rem;
+    letter-spacing: 2.5px;
+}
+
+.author-card h3 {
+    font-size: 1.5rem;
+}
+
+.author-card span {
+    opacity: 0.8;
+    font-size: 70%;
+}
+
+footer {
+    display: flex!important;
+    justify-content: space-evenly;
+    align-items: center;
+    flex: 1;
+}
+
+.shareHeading, .commentHeading {
+    font-size: 5rem;
+    opacity: .5;
+    font-weight: 800;
+}
+
+.socLink {
+    position: relative;
+    bottom: 50px;
+    height: auto;
+    width: 55px;
+    padding: 0 5px;
+}
+
+.link {
+    width: 35px;
+}
+
+.copyright {
+    font-weight: 700;
+}
+
+.copyright span {
+    opacity: .5;
+}
+
+.commentHeading {
+    position: relative;
+    top: 55px;
+}
+
+.commentRect {
+    background: #eee;
+    height: auto;
+    width: 400px;
+    margin: auto;
+    padding: 50px 0;
+    border-radius: 10px;
+}
