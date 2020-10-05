@@ -1,6 +1,6 @@
-# Foobar
+# PaperPixel Blog Website
 
-Foobar is a Python library for dealing with word pluralization.
+PaperPixel is a tech blog. The author is Jeel Patel, writes about Career, Technology, and Success.
 
 ## Installation
 There's no need to use package managers like npm, it's a static blog.
