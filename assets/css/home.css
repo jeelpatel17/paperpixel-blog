@@ -35,6 +35,11 @@ html {
     overflow-x: hidden;
 }
 
+body {
+    width: 100vw;
+    overflow-x: hidden;
+}
+
 /* STYLES WHEN SOME TEXT IS SELECTED */
 
 ::selection {
@@ -45,7 +50,7 @@ html {
 /* CUSTOM SCROLLBAR */
 
 ::-webkit-scrollbar {
-    width: 10px;
+    width: 0;
 }
 
 ::-webkit-scrollbar-track {
