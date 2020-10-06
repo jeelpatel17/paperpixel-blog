@@ -24,12 +24,14 @@
     src: url(../fonts/Garamond/Cormorant.ttf);
 }
 
+
 /* STYLES WHEN SOME TEXT IS SELECTED */
 
 ::selection {
     color: #fff;
     background: blue;
 }
+
 
 /* CUSTOM SCROLLBAR */
 
@@ -45,7 +47,10 @@
     background: grey;
 }
 
-h1, h2, h3, h4 {
+h1,
+h2,
+h3,
+h4 {
     font-family: Poppins, sans-serif;
 }
 
@@ -70,6 +75,7 @@ a {
 .quote {
     font-size: 2rem;
 }
+
 
 /* NAVBAR */
 
@@ -127,9 +133,10 @@ article::first-letter {
     background: darkgrey;
     border-radius: 10px;
     color: #f2fade;
-    padding: 20px 0;
+    padding: 20px 20px;
     margin: 20px auto;
     width: 45vw;
+    word-wrap: break-word;
 }
 
 .author-card img {
@@ -139,7 +146,7 @@ article::first-letter {
 
 .author-card h2 {
     text-transform: uppercase;
-    font-size: 3.5rem;
+    font-size: 3rem;
     letter-spacing: 2.5px;
 }
 
@@ -159,7 +166,8 @@ footer {
     flex: 1;
 }
 
-.shareHeading, .commentHeading {
+.shareHeading,
+.commentHeading {
     font-size: 5rem;
     opacity: .5;
     font-weight: 800;
