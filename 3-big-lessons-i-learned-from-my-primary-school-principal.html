@@ -23,7 +23,7 @@
 
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg navbar-dark bg">
+        <nav class="navbar bg">
             <a class="brand center" href="index.html">PAPER PIXEL</a>
         </nav>
         <div class="hero container-fluid center">
@@ -81,14 +81,13 @@
             <br><br> Now after ~3 years, I realize how she was teaching me the important aspects of life, and training
             me to face it.
             <br><br>
-            <span style="-webkit-text-stroke: .5px black;">Now, This is <a href="https://jeelpatel.ml"
-                    rel="noopener _blank">Jeel Patel</a> signing
+            <span>Now, This is <a href="https://jeelpatel.ml" rel="noopener _blank">Jeel Patel</a> signing
                 off.
                 <br><br>
                 Hope you learned something new!</span>
         </article>
 
-        <div style=" background: darkgrey; width: 45vm;" class="card author-card">
+        <div class="card author-card">
 
             <img class="rounded-circle" src="assets/img/jeelPatel.JPG" alt="jeelpatel" height="auto" width="150px">
             <div class="card-text">
@@ -106,7 +105,8 @@
                 <div class="icons">
                     <a
                         href="https://twitter.com/intent/tweet?text=Hey!%20Checkout%20this%20amazing%20blog!%20http://paperpixel.ml/3-big-lessons-i-learned-from-my-primary-school-principal.html&baz=456"><img
-                            class="socLink twitter" src="assets/img/icons/twitter-share.svg" alt="twitter-icon"></a>
+                            class="socLink twitter" src="assets/img/icons/twitter-share.svg" alt="twitter-icon"
+                            target="_blank"></a>
                     <a href="whatsapp://send?text=Hey! Checkout this amazing blog! It's about helping ourselves!"
                         data-action="share/whatsapp/share" target="_blank"><img class="socLink whatsapp"
                             src="assets/img/icons/wa-share.svg" alt="whatsapp-icon"></a>
@@ -120,30 +120,7 @@
             </div>
         </div>
     </footer>
-    <script>
-        // COPY TO CLIPBOARD FUNCTION
-        function copyToClipboard(elementId) {
-
-            // Create a "hidden" input
-            var aux = document.createElement("input");
-
-            // Assign it the value of the specified element
-            aux.setAttribute("value", document.getElementById(elementId).innerHTML);
-
-            // Append it to the body
-            document.body.appendChild(aux);
-
-            // Highlight its content
-            aux.select();
-
-            // Copy the highlighted text
-            document.execCommand("copy");
-
-            // Remove it from the body
-            document.body.removeChild(aux);
-            window.alert('Link copied!');
-        }
-    </script>
+    <script src="assets/js/main.js"></script>
 </body>
 
 </html>

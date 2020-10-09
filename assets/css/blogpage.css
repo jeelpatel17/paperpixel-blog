@@ -72,10 +72,13 @@ a {
     color: blue!important;
 }
 
+a:hover{
+    text-decoration: underline!important;
+}
+
 .quote {
     font-size: 2rem;
 }
-
 
 /* NAVBAR */
 
@@ -88,6 +91,7 @@ a {
 
 .brand:hover {
     color: white;
+    text-decoration: none!important;
 }
 
 .bg{
@@ -140,8 +144,8 @@ article::first-letter {
     justify-content: center;
     align-items: center;
     border: 3px lightgray solid;
-    background: darkgrey;
-    border-radius: 10px;
+    background: blue;
+    border-radius: 15px;
     color: #f2fade;
     padding: 20px 20px;
     margin: 20px auto;
@@ -181,6 +185,7 @@ footer {
     font-size: 5rem;
     opacity: .5;
     font-weight: 800;
+    color: blue;
 }
 
 .socLink {
@@ -189,6 +194,10 @@ footer {
     height: auto;
     width: 55px;
     padding: 0 5px;
+}
+
+.socLink:hover{
+    transform: translateY(-15px);
 }
 
 .link {
@@ -219,7 +228,7 @@ footer {
 
 @media screen and (min-width: 900px){
     html{
-        font-size: 20px;
+        font-size: 18px;
     }
 }
 
