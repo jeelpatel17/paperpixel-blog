@@ -24,6 +24,7 @@
         box-sizing: border-box;
         transition: all cubic-bezier(0, 0, 0, 1) .25s;
         list-style: none;
+        mix-blend-mode:difference;
     }
     
     html {
