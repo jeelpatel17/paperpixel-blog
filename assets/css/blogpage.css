@@ -90,6 +90,10 @@ a {
     color: white;
 }
 
+.bg{
+    background: #161d20;
+}
+
 .nav-item {
     font-family: Poppins, sans-serif;
     margin: 0 30px;
@@ -97,15 +101,21 @@ a {
 }
 
 .hero {
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     color: #f2fade;
+    background: linear-gradient(to right, rgb(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/blogpage/This-is-why-you-shouldn’t-care-about-your-relatives.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
 }
 
 .hero h1 {
     font-size: 4rem;
+    margin: 20px 0;
 }
 
 .hero h3 {
@@ -116,7 +126,7 @@ article {
     font-size: 1.5rem;
     padding: 50px 0;
     font-family: Garamond, sans-serif;
-    width: 60vw!important;
+    width: 85vw!important;
     text-align: justify;
 }
 
@@ -135,7 +145,7 @@ article::first-letter {
     color: #f2fade;
     padding: 20px 20px;
     margin: 20px auto;
-    width: 45vw;
+    max-width: max-content;
     word-wrap: break-word;
 }
 
@@ -205,4 +215,32 @@ footer {
     margin: auto;
     padding: 50px 0;
     border-radius: 10px;
+}
+
+@media screen and (min-width: 900px){
+    html{
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 748px){
+    html{
+        font-size: 17px;
+    }
+}
+
+@media screen and (max-width: 500px){
+    html{
+        font-size: 15px;
+    }
+    .author-card{
+        flex-direction: column;
+        text-align: center;
+    }
+    .hero{
+        height: 40vh;
+    }
+    .hero h1{
+        font-size: 2rem;
+    }
 }
