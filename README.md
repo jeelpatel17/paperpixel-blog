@@ -1,6 +1,7 @@
 # PaperPixel Blog Website
-
 PaperPixel is a tech blog. The author is Jeel Patel, writes about Career, Technology, and Success.
+
+![PaperPixel Blog — At a Glance](https://jeelpatel17.github.io/paperpixel/paperpixel-glance.png)
 
 ## Installation
 There's no need to use package managers like npm, it's a static website, without any dependencies.
