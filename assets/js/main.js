@@ -32,3 +32,8 @@ function openNav() {
 function closeNav() {
     document.getElementById("mySidenav").style.width = "0";
 }
+
+function darkToggler() {
+    let body = document.querySelector('body');
+    body.classList.toggle('dark-body');
+}

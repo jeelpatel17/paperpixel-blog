@@ -24,7 +24,6 @@
         box-sizing: border-box;
         transition: all cubic-bezier(0, 0, 0, 1) .25s;
         list-style: none;
-        mix-blend-mode:difference;
     }
     
     html {
@@ -85,6 +84,7 @@
     
     a {
         text-decoration: none;
+        cursor: pointer;
     }
     
     .exAccent {
@@ -101,7 +101,7 @@
         border-top: 70px rgba(22, 29, 32, .2) dotted;
     }
     
-    button {
+    button{
         cursor: pointer;
         max-width: 80%;
         margin: 10px auto;
@@ -463,6 +463,10 @@
         min-height: auto;
         width: 50px;
     }
+
+    .socialLinks a:hover{
+        transform: translateY(-10px);
+    }
     
     .brand {
         min-height: auto;
@@ -479,8 +483,51 @@
         justify-content: space-evenly;
         align-items: center;
     }
-    
-    .custom-shape-divider-top-1600944400 {
+
+    /*  D A R K  M O D E  CONFIGURATIONS */
+
+    .darkmode-btn{
+        position: fixed;
+        border: none;
+        bottom: 20px;
+        right: 20px;
+        border-radius: 50%;
+        background-color: darkslategrey;
+        color: floralwhite;
+        padding: 10px;
+        font-size: 1.5rem;
+    }
+    .dark-body{
+        background: #161d20;
+        color: #efefef;
+    }
+    .dark-body .brand,.dark-body .catIllus,.dark-body .socLink{
+        filter: invert(1);
+    }
+    .dark-body .card{
+        box-shadow: none;
+        border: 2px solid lightgrey;
+    }
+    .dark-body button{
+        color: #efefef;
+        background: transparent;
+    }
+    .dark-body button:hover{
+        background: blue;
+    }
+    .dark-body input{
+        border: 2px solid #efefef;
+        background: transparent;
+        color: #fff;
+    }
+    .dark-body input:focus{
+        border-color: blue;
+    }
+    .dark-body .navLinks::after{
+        filter: invert(1);
+    }
+    /* HEADER DASHED STRIP  S V G */
+    .custom-shape-divider-top {
         position: absolute;
         top: 0;
         left: 0;
@@ -492,7 +539,7 @@
         z-index: -1;
     }
     
-    .custom-shape-divider-top-1600944400 svg {
+    .custom-shape-divider-top svg {
         position: relative;
         display: block;
         right: -10px;
@@ -502,7 +549,7 @@
         min-height: 250px;
     }
     
-    .custom-shape-divider-top-1600944400 .shape-fill {
+    .custom-shape-divider-top .shape-fill {
         fill: none;
         stroke: blue;
         stroke-width: 5;
@@ -510,7 +557,8 @@
         stroke-dasharray: 40;
         stroke-linejoin: round;
     }
-    /* hamburger */
+
+    /* H A M B U R G E R  NAV */
     
     .sidenav {
         height: 100vh;
@@ -550,7 +598,7 @@
         top: 0;
         font-size: 36px;
     }
-    /*************** MAKING IT RESPONSIVE ******************************/
+    /*  MAKING IT RESPONSIVE  */
     /* FOR DEVICES SMALLER THAN LAPTOP/PC */
     
     @media screen and (max-width: 1330px) {
@@ -599,7 +647,7 @@
         .aboutFun,
         .misfit,
         .vl,
-        .custom-shape-divider-top-1600944400 {
+        .custom-shape-divider-top {
             display: none;
         }
         .openNav {
@@ -683,10 +731,11 @@
             padding: 230px 0 10px;
         }
     }
+
     /* FOR TABLET DEVICES */
     
     @media screen and (max-width: 767px) {
-        .custom-shape-divider-top-1600944400 svg {
+        .custom-shape-divider-top svg {
             width: calc(100% + 13px);
             height: 76px;
         }
