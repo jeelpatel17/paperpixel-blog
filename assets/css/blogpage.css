@@ -226,6 +226,32 @@ footer {
     border-radius: 10px;
 }
 
+ /* D A R K  M O D E  CONFIGURATIONS */
+ .darkmode-btn{
+    position: fixed;
+    border: none;
+    bottom: 20px;
+    right: 20px;
+    border-radius: 50%;
+    background-color: darkslategrey;
+    color: floralwhite;
+    padding: 10px;
+    font-size: 1.5rem;
+}
+
+.dark-body{
+    background: #161d20;
+    color: #efefef;
+}
+.dark-body h2{
+    color: blue;
+}
+.dark-body .auth-name{
+    color: #efefef;
+}
+.dark-body .icons{
+    filter: invert(1);
+}
 @media screen and (min-width: 900px){
     html{
         font-size: 18px;
